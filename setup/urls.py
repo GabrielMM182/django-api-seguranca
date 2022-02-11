@@ -15,4 +15,4 @@ urlpatterns = [
     path('', include(router.urls) ),
     path('alunos/<int:pk>/matriculas/', ListaMatriculasAluno.as_view()),
     path('cursos/<int:pk>/matriculas/', ListaAlunosMatriculados.as_view())
-] + static(settings.MEDIA_URL, documento_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
